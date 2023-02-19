@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LeeTxHacker Random Pass Gen</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <h1>Random Password Generator</h1>
+    <div id="password-container">
+      <p id="password"></p>
+      <div id="options">
+        <label>
+          <input type="checkbox" id="uppercase" checked>
+          Enable Uppercase Letters
+        </label>
+        <label>
+          <input type="checkbox" id="lowercase" checked>
+          Enable Lowercase Letters
+        </label>
+        <label>
+          <input type="checkbox" id="special" checked>
+          Enable Special Characters
+        </label>
+        <label>
+        Maximum Length:
+          <input type="number" id="max-length" min="1" max="100" value="12">
+        </label>
+      </div>
+      <button id="generate-btn" onclick="generatePassword()">Generate Password</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
